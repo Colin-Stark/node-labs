@@ -1,0 +1,21 @@
+{
+  "name": "week1",
+  "version": "1.0.0",
+  "description": "Beginner Lab Zero",
+  "main": "starter.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Javascript",
+    "Object",
+    "Oriented",
+    "Programming"
+  ],
+  "author": "COLLINS OLOKPEDJE",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.56.0",
+    "eslint-config-google": "^0.14.0"
+  }
+}
