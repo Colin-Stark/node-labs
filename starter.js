@@ -175,6 +175,7 @@
  * 
  */
 
+/*
 function foo(){
 	let a =5;
 	return function fool(){
@@ -187,3 +188,164 @@ const bar = foo();
 let anotherResult = bar();
 anotherResult = bar();
 console.log(anotherResult);
+*/
+
+/*
+const s1 = 'hello';
+const s2 = new String('world');
+console.log(typeof s1);
+console.log(typeof s2);
+*/
+
+// function Car(make ,model,year){
+// 	this.make = make;
+// 	this.model=model;
+// 	this.year=year;
+// 	this.metadata={
+// 		name: "test"
+// 	}
+// 	this.print=()=>{
+// 		console.log(`${this.make} ${this.year}`)
+// 	}
+// }
+
+// const car1 = new Car('plaid','Tesla', 2023);
+
+/*
+const word = "winner";
+console.log(word.charAt(1));
+*/
+
+
+// concepts
+/**
+ * padStart && padEnd
+ * endsWith
+ */
+
+// const pa = "blame";
+// const sw = pa.s
+// console.log(pa.padEnd(6,'s'));
+
+/**
+ * AARRAYS IN JAVASCRIPT
+ */
+
+// const arr = [1, 'hello', 1.4, '1'];
+
+// // console.log(arr);
+// console.log[1];
+
+/**
+ * 
+ * ARRAY DESTRUCTURING
+ * 
+ * same as doing
+ * const first = arr[0];
+ * const greeting = arr[1];
+ */
+// const[first,greeting]=arr; 
+
+// console.log(first, greeting);
+
+// useful example
+
+// const student = [10023, 'JOHN', 'DOE', '1ST SEMESTER' ];
+
+// const [ID, FIRSTNAME, LASTNAME, SEMESTER]=student;
+
+// console.log(ID, FIRSTNAME, LASTNAME, SEMESTER);
+
+// const dateString = '17/04/2024';
+// const elms = dateString.split('/');
+// console.log(elms);
+// const [DD, MM, YYYY]=elms;
+/**
+ * ASSUMING WE DONT WANT THE FIRST VALUE 
+ * IGNORING THE FIRST VALUE
+ */
+// const [, months, year] =elms;
+// console.log(DD,MM,YYYY)
+// console.log(months, year);
+// console.log('Month: '+ months + ' ' + 'Year: '+ year);
+
+/**
+ * Using String literals
+ * to simplify things
+ */
+
+// console.log(`Month:${months} Year:${year}`);
+
+// const dateString = '17/02/2024';
+// const elm=dateString.split('/');
+// elm[1]='06'; // works even though elm is a constant
+// console.log(elm);
+
+/**
+ * Transversing an array using foreach 
+ */
+
+// function printValue(value){
+// 	console.log(`you have ${value}`)
+// }
+
+/**
+ * 
+ * @param {a} arraying  - parameter 1
+ * @param {*} foo - parameter 2
+ */
+
+//part 1 style
+// function modifiedForEach(arraying,foo){
+// 	for(let i=0; i<arraying.length; i++){
+// 		foo(arraying[i]);
+// 	}
+// }
+
+// part 2 style using arrow function
+// const modifiedForEach = (arraying,foo)=>{
+// 	for(let i=0; i<arraying.length; i++){
+// 		foo(arraying[i]);
+// 	}
+// }
+// modifiedForEach(arr,printValue)
+
+// arr.forEach(printValue);
+
+
+/**
+ * moving through an array
+ */
+
+// for(const value of arr){
+// 	console.log(`i saw ${value}`);
+// }
+
+
+// arr.push(123); // add 123 as a suffix
+// console.log(arr);
+// arr.pop();// removes the last element , so 123 goes away
+// console.log(arr);
+// arr.pop() // removes the next last element which is '1' (object)
+// console.log(arr);
+
+
+/**
+ * Removing specific element in array with array.splice
+ * 
+ * Difference between delete and splice is that
+ * 	DELETE-  removes the value of the element and leave it empty
+ * 	SPLICE - remove the index and the value
+ * 	CONCAT - Combines two array together
+ * 	JOIN - Combines all element in an array and seperates them with character that is specified
+ */
+
+const learnMapArray = [1, 2, 3];
+const multiplier = learnMapArray.map(function(elm){
+	return elm*2
+})
+
+console.log(multiplier);
+
+
+
